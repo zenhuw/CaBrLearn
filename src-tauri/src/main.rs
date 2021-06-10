@@ -1,6 +1,5 @@
 #![cfg_attr(all(not(debug_assertions), target_os = "windows"), windows_subsystem = "windows")]
 
-#[cfg(feature = "tauri_app")]
 fn main() {
   // must be initialized first
   let logger = cabr2_logger::plugin::Logger::new();
@@ -24,8 +23,6 @@ fn main() {
     .unwrap();
 }
 
-#[cfg(not(any(feature = "tauri_app", feature = "webserver")))]
-compile_error!("you must specify one of these features: 'tauri_app', 'webserver'!");
 
 #[cfg(all(feature = "tauri_app", feature = "webserver"))]
 compile_error!("you can only use one of these features: 'tauri_app', 'webserver'!");

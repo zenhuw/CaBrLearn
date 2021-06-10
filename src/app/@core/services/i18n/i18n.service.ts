@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { merge } from 'lodash';
 import { Observable } from 'rxjs';
 
-import DEFAULT_LOCALIZATION from '../../../../assets/defaultStrings.json';
+import DEFAULT_LOCALIZATION from '../../../../../translations/en_us.json';
 import Logger from '../../utils/logger';
 import { TauriService } from '../tauri/tauri.service';
 

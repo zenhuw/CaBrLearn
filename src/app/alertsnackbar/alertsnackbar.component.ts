@@ -64,7 +64,7 @@ export class AlertsnackbarComponent implements OnInit, OnDestroy {
         panelClass: this.cssClass(alert),
       });
     }
-    return;
+    return undefined;
   }
 
   private showSnackbar(): void {
