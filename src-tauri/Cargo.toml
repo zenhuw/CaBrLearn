@@ -16,7 +16,7 @@ category = "Education"
 resources = [ "ghs_symbols/*.png" ]
 
 [build-dependencies]
-tauri-build = "1.0.0-beta.0"
+tauri-build = "1.0.0-beta.4"
 winres = "*"
 
 [dependencies]
